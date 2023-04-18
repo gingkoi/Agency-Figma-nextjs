@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Offers from "@/components/Offers";
+import Plans from "@/components/Plans";
 import Testimonials from "@/components/Testimonials";
 import Image from "next/image";
 
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <Offers />
         <Testimonials />
+        <Plans />
       </div>
     </main>
   );
