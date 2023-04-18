@@ -4,10 +4,12 @@ const PurpleCard = ({
   plan,
   price,
   features,
+  toggle,
 }: {
   plan: string;
   price: number;
   features: any;
+  toggle: boolean;
 }) => {
   return (
     <div className="border-2 border-white rounded-3xl p-12">
@@ -17,7 +19,9 @@ const PurpleCard = ({
           {plan}
         </p>
         <p className="text-5xl font-bold">${`${price}`}/mth</p>
-        <p className="text-primaryPurple">Billed annually.</p>
+        <p className="text-primaryPurple">
+          Billed {toggle ? "annually" : "monthly"}.
+        </p>
       </div>
       <div className="my-6 space-y-2">
         {features.map((item: string, index: number) => (

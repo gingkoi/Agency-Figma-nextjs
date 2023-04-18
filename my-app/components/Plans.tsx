@@ -1,8 +1,14 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import GreenCard from "./plans/GreenCard";
 import PurpleCard from "./plans/PurpleCard";
 
 const Plans = () => {
+  const [toggle, setToggle] = useState(false);
+  const toggleClass = " transform translate-x-5";
+  const handleClick = () => {
+    setToggle(!toggle);
+  };
   const plans = [
     {
       plan: "Basic Plan",
@@ -46,7 +52,7 @@ const Plans = () => {
           PRICING PLANS
         </h3>
         <div className="border-2 border-white rounded-3xl p-5 py-20">
-          <div className="text-center mb-10 space-y-5">
+          <div className="text-center mb-10 space-y-7">
             <h4 className="lg:text-5xl text-3xl font-semibold">
               Plans for all sizes
             </h4>
@@ -54,22 +60,42 @@ const Plans = () => {
               Simple, transparent pricing that grows with you. Try any plan free
               for 30 days.
             </p>
+            <div className="flex items-center space-x-4 justify-center">
+              <div>
+                <div
+                  className="md:w-14 md:h-7 w-12 h-6 flex items-center bg-primaryPurple rounded-full p-1 cursor-pointer"
+                  onClick={handleClick}
+                >
+                  {/* Switch */}
+                  <div
+                    className={
+                      "bg-black md:w-6 md:h-6 h-5 w-5 rounded-full shadow-md transform duration-300 ease-in-out" +
+                      (toggle ? toggleClass : null)
+                    }
+                  />
+                </div>
+              </div>
+              <p>Annual pricing (save 20%)</p>
+            </div>
           </div>
           <div className="grid lg:grid-cols-3 gap-5 mx-2">
             <GreenCard
               plan={plans[0].plan}
-              price={plans[0].price}
+              price={toggle ? plans[0].price : 12}
               features={plans[0].features}
+              toggle={toggle}
             />
             <PurpleCard
               plan={plans[1].plan}
-              price={plans[1].price}
+              price={toggle ? plans[1].price : 24}
               features={plans[1].features}
+              toggle={toggle}
             />
             <GreenCard
               plan={plans[2].plan}
-              price={plans[2].price}
+              price={toggle ? plans[2].price : 48}
               features={plans[2].features}
+              toggle={toggle}
             />
           </div>
         </div>
