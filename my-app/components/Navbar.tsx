@@ -46,8 +46,13 @@ const Navbar = () => {
           Contact
         </p>
       </div>
-      <div className="hidden lg:block">
-        <img src="/navbar/moon.svg" />
+      <div className="hidden lg:flex space-x-5 font-bold text-xl items-center">
+        <div>Login</div>
+        <div
+          className={`lg:py-2 lg:px-7 py-3 px-5 bg-primaryPurple rounded-full text-white custom_shadow2 border-2 border-black flex justify-center space-x-3 hover:scale-105 duration-300 font-bold lg:text-lg text-base`}
+        >
+          Free Trial
+        </div>
       </div>
       <div className="lg:hidden">
         <img src="/hamburger.svg" className="w-12 h-12" onClick={handleClick} />
@@ -55,7 +60,7 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? `fixed z-10 bg-black/90 top-0 left-0 w-[100%] h-screen flex flex-col justify-center items-center text-3xl space-y-10 font-bold ease-in duration-200`
+            ? `fixed z-10 bg-black/95 top-0 left-0 w-[100%] h-screen flex flex-col justify-center items-center text-3xl space-y-10 font-bold ease-in duration-200`
             : `left-[-100%] z-10 fixed`
         }
       >

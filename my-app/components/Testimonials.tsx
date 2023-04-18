@@ -18,9 +18,9 @@ const Testimonials = () => {
       email: "CEO at Riverdog Daycare",
       message:
         "I’ve worked on a variety of software products in the past and there’s always a huge translation between the person making the product and those using the product. Minimum has been really great at getting into our shoes and helping us figure out what was going to work.",
-      avatar: "/avatar/avatar2_small.svg",
+      avatar: "/avatar/avatar2_small.png",
       altAvater: "Avatar",
-      picture: "/avatar/avatar2_big.svg",
+      picture: "/avatar/avatar2_big.png",
       altPicture: "Micheal Davidson",
     },
     {
@@ -28,9 +28,9 @@ const Testimonials = () => {
       email: "Founder at 1V.GG",
       message:
         "Out of any of the no-code agencies that we chatted with, Minimum was the only one that was really innovative and pushed the boundaries of what’s possible within the platforms.",
-      avatar: "/avatar/avatar3_small.svg",
+      avatar: "/avatar/avatar3_small.png",
       altAvater: "Avatar",
-      picture: "/avatar/avatar3_big.svg",
+      picture: "/avatar/avatar3_big.png",
       altPicture: "Maria James",
     },
   ];
