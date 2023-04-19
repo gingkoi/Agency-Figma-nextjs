@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
+import { useInView } from "framer-motion";
 
 const TestimonialCard = ({
   name,
@@ -17,8 +19,19 @@ const TestimonialCard = ({
   picture: string;
   pictureAlt: string;
 }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div className="grid lg:grid-cols-2 border border-white rounded-3xl">
+    <div
+      className="grid lg:grid-cols-2 border border-white rounded-3xl"
+      ref={ref}
+      style={{
+        transform: isInView ? "none" : "translateX(-200px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+      }}
+    >
       <div className="lg:p-16 p-5 space-y-5">
         <div className="flex items-center space-x-5">
           <img

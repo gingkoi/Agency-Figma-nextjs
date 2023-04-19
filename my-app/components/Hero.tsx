@@ -1,9 +1,21 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
+import { useInView } from "framer-motion";
 
 const Hero = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <section id="hero">
-      <div className="w-full flex justify-center relative py-[150px]">
+    <section id="hero" ref={ref}>
+      <div
+        className="w-full flex justify-center relative py-[150px]"
+        style={{
+          transform: isInView ? "none" : "translateY(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+      >
         <img
           src="/hero/hero.svg"
           className="w-[320px] md:w-[600px] lg:w-[900px]"
