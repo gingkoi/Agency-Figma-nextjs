@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import { styles } from "./styles/styleSheet";
 import { Link } from "react-scroll/modules";
-import LogIn from "./modal/LogIn";
 
 const Navbar = () => {
   const [nav, useNav] = useState(false);
