@@ -22,31 +22,33 @@ const Footer = () => {
                   <img src="/footer/mail.svg" alt="mail icon" />
                   <p className="font-medium text-2xl">Email</p>
                   <p className="text-lg">Our friendly team is here to help.</p>
-                  <p className="font-bold text-primaryPurple">
-                    hi@untitledui.com
+                  <p className="font-bold text-primaryPurple cursor-pointer">
+                    <p>hi@untitledui.com</p>
                   </p>
                 </div>
                 <div className="space-y-3">
                   <img src="/footer/message.svg" alt="Message icon" />
                   <p className="font-medium text-2xl">Book a session</p>
                   <p className="text-lg">Book a session with calendly</p>
-                  <p className="font-bold text-primaryGreen">Book now</p>
+                  <p className="font-bold text-primaryGreen cursor-pointer">
+                    <p className="hover:underline">Book now</p>
+                  </p>
                 </div>
                 <div className="space-y-3">
                   <img src="/footer/location.svg" alt="Location icon" />
                   <p className="font-medium text-2xl">Office</p>
                   <p className="text-lg">Come say hello at our office HQ.</p>
-                  <p className="font-bold text-primaryGreen">
-                    100 Smith Street Collingwood VIC 3066 AU
-                  </p>
+                  <div className="font-bold text-primaryGreen cursor-pointer">
+                    <p>100 Smith Street Collingwood VIC 3066 AU</p>
+                  </div>
                 </div>
                 <div className="space-y-3">
                   <img src="/footer/phone.svg" alt="Phone icon" />
                   <p className="font-medium text-2xl">Phone</p>
                   <p className="text-lg">Mon-Fri from 8am to 5pm.</p>
-                  <p className="font-bold text-primaryPurple">
-                    +1 (555) 000-0000
-                  </p>
+                  <div className="font-bold text-primaryPurple cursor-pointer">
+                    <p>+1 (555) 000-0000</p>
+                  </div>
                 </div>
               </div>
             </div>

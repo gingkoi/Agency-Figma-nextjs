@@ -33,7 +33,7 @@ const PurpleCard = ({
       </div>
       <div>
         <div
-          className={`lg:py-2 lg:px-7 py-3 px-5 bg-primaryPurple rounded-full text-white custom_shadow2 border-2 border-black flex justify-center space-x-3 hover:scale-105 duration-300 font-bold lg:text-lg text-base`}
+          className={`lg:py-2 lg:px-7 py-3 px-5 bg-primaryPurple rounded-full text-white custom_shadow2 border-2 border-black flex justify-center space-x-3 hover:scale-105 duration-300 font-bold lg:text-lg text-base cursor-pointer`}
         >
           Get Started
         </div>

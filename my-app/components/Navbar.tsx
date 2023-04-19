@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { styles } from "./styles/styleSheet";
 import { Link } from "react-scroll/modules";
+import LogIn from "./modal/LogIn";
 
 const Navbar = () => {
   const [nav, useNav] = useState(false);
@@ -57,7 +58,7 @@ const Navbar = () => {
         <Link
           to="hero"
           duration={500}
-          offset={0}
+          offset={100}
           smooth={true}
           className="cursor-pointer"
         >
@@ -105,9 +106,8 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="hidden lg:flex space-x-5 font-bold text-xl items-center">
-          <div>Login</div>
           <div
-            className={`lg:py-2 lg:px-7 py-3 px-5 bg-primaryPurple rounded-full text-white custom_shadow2 border-2 border-black flex justify-center space-x-3 hover:scale-105 duration-300 font-bold lg:text-lg text-base`}
+            className={`lg:py-2 lg:px-7 py-3 px-5 bg-primaryPurple rounded-full text-white custom_shadow2 border-2 border-black flex justify-center space-x-3 hover:scale-105 duration-300 font-bold lg:text-lg text-base cursor-pointer`}
           >
             Free Trial
           </div>
@@ -126,6 +126,7 @@ const Navbar = () => {
               : `left-[-100%] z-10 fixed duration-300 ease-in h-screen`
           }
         >
+          <div className="text-primaryGreen">Free Trial</div>
           {links.map((item, index) => (
             <Link
               to={item.id}
