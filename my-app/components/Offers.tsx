@@ -34,7 +34,7 @@ const Offers = () => {
     },
   ];
   return (
-    <section>
+    <section id="agency">
       <div className="text-white py-10">
         <div className="bg-white h-1 absolute left-0 right-0" />
         <h2 className="text-center my-16 text-7xl font-black italic">OFFERS</h2>

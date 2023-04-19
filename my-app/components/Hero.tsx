@@ -3,8 +3,8 @@ import { styles } from "./styles/styleSheet";
 
 const Hero = () => {
   return (
-    <section className="">
-      <div className="w-full flex justify-center my-5 relative">
+    <section id="hero">
+      <div className="w-full flex justify-center relative py-[150px]">
         <img
           src="/hero/hero.svg"
           className="w-[320px] md:w-[600px] lg:w-[900px]"

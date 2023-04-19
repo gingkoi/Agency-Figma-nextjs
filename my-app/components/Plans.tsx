@@ -45,7 +45,7 @@ const Plans = () => {
     },
   ];
   return (
-    <section>
+    <section id="pricing">
       <div className="text-white py-20">
         <div className="bg-white h-1 absolute left-0 right-0" />
         <h3 className="text-center my-16 lg:text-7xl text-4xl font-black italic">

@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <section>
+    <section id="contact">
       <div className="text-white bg-black">
         <div className="bg-white h-1 absolute left-0 right-0" />
         <div className="lg:max-w-[1400px] w-screen px-5 lg:mx-auto">
