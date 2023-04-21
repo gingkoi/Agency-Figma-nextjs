@@ -21,7 +21,7 @@ const PicRight = ({
     <div ref={ref}>
       <div
         style={{
-          transform: isInView ? "none" : "translateX(-200px)",
+          transform: isInView ? "none" : "translateX(200px)",
           opacity: isInView ? 1 : 0,
           transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s",
         }}
@@ -44,7 +44,7 @@ const PicRight = ({
           </div>
         </div>
         <div className="flex w-full justify-center lg:justify-end">
-          <img src={`${img}`} />
+          <img src={`${img}`} alt={alt} />
         </div>
       </div>
     </div>

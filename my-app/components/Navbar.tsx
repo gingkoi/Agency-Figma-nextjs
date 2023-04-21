@@ -60,10 +60,12 @@ const Navbar = () => {
           offset={100}
           smooth={true}
           className="cursor-pointer"
+          href="/"
         >
           <img
             src="/navbar/logo.svg"
             className="hover:scale-105 duration-300"
+            alt="VP logo"
           />
         </Link>
         <div className="hidden lg:flex items-center space-x-20">
@@ -73,6 +75,7 @@ const Navbar = () => {
             duration={500}
             offset={100}
             smooth={true}
+            href="/"
           >
             Home
           </Link>
@@ -82,6 +85,7 @@ const Navbar = () => {
             duration={500}
             offset={-30}
             smooth={true}
+            href="/"
           >
             Agency
           </Link>
@@ -91,6 +95,7 @@ const Navbar = () => {
             duration={500}
             offset={280}
             smooth={true}
+            href="/"
           >
             Pricing
           </Link>
@@ -100,6 +105,7 @@ const Navbar = () => {
             duration={500}
             offset={0}
             smooth={true}
+            href="/"
           >
             Contact
           </Link>
@@ -114,6 +120,7 @@ const Navbar = () => {
         <div className="lg:hidden">
           <img
             src="/hamburger.svg"
+            alt="hambuger icon"
             className="w-12 h-12"
             onClick={handleClick}
           />
@@ -134,6 +141,7 @@ const Navbar = () => {
               smooth={true}
               key={index}
               onClick={closeNav}
+              href="/"
             >
               {item.name}
             </Link>

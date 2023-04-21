@@ -22,17 +22,17 @@ const Footer = () => {
                   <img src="/footer/mail.svg" alt="mail icon" />
                   <p className="font-medium text-2xl">Email</p>
                   <p className="text-lg">Our friendly team is here to help.</p>
-                  <p className="font-bold text-primaryPurple cursor-pointer">
+                  <div className="font-bold text-primaryPurple cursor-pointer">
                     <p>hi@untitledui.com</p>
-                  </p>
+                  </div>
                 </div>
                 <div className="space-y-3">
                   <img src="/footer/message.svg" alt="Message icon" />
                   <p className="font-medium text-2xl">Book a session</p>
                   <p className="text-lg">Book a session with calendly</p>
-                  <p className="font-bold text-primaryGreen cursor-pointer">
+                  <div className="font-bold text-primaryGreen cursor-pointer">
                     <p className="hover:underline">Book now</p>
-                  </p>
+                  </div>
                 </div>
                 <div className="space-y-3">
                   <img src="/footer/location.svg" alt="Location icon" />
@@ -53,7 +53,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex justify-end md:justify-center">
-              <img src="/footer/calender.svg" alt="" />
+              <img src="/footer/calender.svg" alt="calender" />
             </div>
           </div>
         </div>
