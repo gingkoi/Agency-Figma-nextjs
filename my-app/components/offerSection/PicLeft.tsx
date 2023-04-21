@@ -42,7 +42,11 @@ const PicLeft = ({
               className={`lg:py-4 lg:px-7 py-3 px-5 bg-primaryGreen rounded-full text-black custom_shadow border-2 border-black flex items-center space-x-3 hover:scale-105 duration-300`}
             >
               <p className="font-bold lg:text-xl text-base">LEARN MORE</p>
-              <img src="/button/block.svg" className="lg:w-10 w-7" />
+              <img
+                src="/button/block.svg"
+                className="lg:w-10 w-7"
+                alt="code block"
+              />
             </button>
           </div>
         </div>

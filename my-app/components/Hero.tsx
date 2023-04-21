@@ -19,6 +19,7 @@ const Hero = () => {
         <img
           src="/hero/hero.svg"
           className="w-[320px] md:w-[600px] lg:w-[900px]"
+          alt="Hero"
         />
         <div className="max-w-[700px] absolute lg:bottom-[5%] bottom-0 left-0 z-5">
           <h1 className="text-white font-black lg:text-7xl md:text-4xl text-xl">
@@ -34,7 +35,11 @@ const Hero = () => {
           className={`lg:py-5 lg:px-7 py-3 px-5 bg-primaryGreen rounded-full text-black custom_shadow border-2 border-black flex items-center space-x-3 hover:scale-105 duration-300`}
         >
           <p className="font-bold lg:text-xl text-base">BUILD WITH US</p>
-          <img src="/button/block.svg" className="lg:w-10 w-7" />
+          <img
+            src="/button/block.svg"
+            className="lg:w-10 w-7"
+            alt="code block"
+          />
         </button>
       </div>
     </section>

@@ -65,7 +65,7 @@ const Offers = () => {
           />
         </div>
         <div className="flex justify-center mt-20">
-          <img src="/banner.svg" />
+          <img src="/banner.svg" alt="Banner" />
         </div>
       </div>
     </section>
